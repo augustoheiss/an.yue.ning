@@ -1,11 +1,11 @@
-import { Leaf, ArrowDown } from 'lucide-react'
+import { Leaf, ArrowDown, ShieldCheck } from 'lucide-react'
 
 export default function HeroSection() {
   const bulletPoints = [
-    'Reprocessamento de traumas retidos nas fáscias (TRG).',
-    'Restauração neurológica via ajustes biomecânicos (Quiropraxia).',
-    'Engenharia e fluxo energético (Medicina Chinesa e Ayurveda).',
-    'Desintoxicação e fluidez linfática (Massoterapia e Drenagem).',
+    'Reprocessamento de tensões e memórias retidas no corpo (TRG).',
+    'Restauração do eixo articular e precisão neurofuncional (Quiropraxia).',
+    'Nutrição pura da terra e sabedoria milenar (Medicina Chinesa & Wu Xing).',
+    'Bio-integração motora ativa: Alongamento, Força, Corrida e Dança (Soutus).',
   ]
 
   return (
@@ -13,13 +13,13 @@ export default function HeroSection() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-forest-900 via-forest-800 to-sage-900" />
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-forest-950 via-forest-900 to-sage-950" />
 
       {/* Organic abstract shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-sage-600/10 blur-3xl animate-float" />
-        <div className="absolute bottom-0 -left-20 w-[500px] h-[500px] rounded-full bg-terra-600/8 blur-3xl animate-pulse-slow" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-sage-500/10 blur-3xl animate-float" />
+        <div className="absolute bottom-0 -left-20 w-[500px] h-[500px] rounded-full bg-terra-500/10 blur-3xl animate-pulse-slow" />
         <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] rounded-full bg-forest-500/10 blur-2xl animate-float" style={{ animationDelay: '2s' }} />
 
         {/* Subtle organic lines */}
@@ -38,55 +38,53 @@ export default function HeroSection() {
             fill="none"
             className="text-ivory-200"
           />
-          <circle cx="300" cy="200" r="100" stroke="currentColor" strokeWidth="0.3" fill="none" className="text-sage-300" />
-          <circle cx="900" cy="600" r="150" stroke="currentColor" strokeWidth="0.3" fill="none" className="text-sage-300" />
         </svg>
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center py-32 md:py-40">
-        {/* Micro-label */}
-        <div className="animate-fade-in inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sage-500/30 bg-sage-800/30 backdrop-blur-sm mb-8">
+        {/* Badge */}
+        <div className="animate-fade-in inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sage-500/30 bg-sage-900/40 backdrop-blur-sm mb-8">
           <Leaf className="w-4 h-4 text-terra-400" />
-          <span className="text-sm text-sage-200 tracking-wide font-medium">
-            Terapia Somática Clínica & Medicina Ancestral
+          <span className="text-xs md:text-sm text-sage-200 tracking-wider font-semibold uppercase">
+            Centro de Saúde Integrativa & Sabedoria da Terra
           </span>
         </div>
 
         {/* Headline */}
         <h1
-          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-ivory-50 leading-[1.1] mb-8 animate-fade-in-up"
+          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-ivory-50 leading-[1.1] mb-8 animate-fade-in-up font-semibold"
           style={{ animationDelay: '0.2s' }}
         >
-          A Rebelião Somática:{' '}
+          A Harmonia Original:{' '}
           <span className="text-terra-400">
-            Reivindique a Inteligência Inata
+            Resgate a Soberania e a Inteligência
           </span>{' '}
-          do Seu Corpo e Mente
+          do Seu Corpo
         </h1>
 
         {/* Subheadline */}
         <p
-          className="max-w-3xl mx-auto text-lg md:text-xl text-sage-200/90 leading-relaxed mb-12 animate-fade-in-up opacity-0"
+          className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-sage-200/90 leading-relaxed mb-12 animate-fade-in-up opacity-0"
           style={{ animationDelay: '0.4s' }}
         >
-          Na era da atrofia cognitiva e da dependência digital, a verdadeira cura exige o retorno à
-          arquitetura física. An.Yue.Ning integra o rigor clínico contemporâneo à sabedoria
-          ancestral para tratar a verdadeira raiz estrutural e emocional do seu sofrimento.
+          O corpo humano foi concebido com uma capacidade inata e perfeita de autorregulação.
+          Unimos o cuidado restaurador das mãos ao vigor do movimento consciente, integrando a
+          sabedoria ancestral dos antigos povos da terra ao rigor da neurobiologia clínica.
         </p>
 
         {/* Bullet Points */}
         <div
-          className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-4 text-left mb-14 animate-fade-in-up opacity-0"
+          className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-3.5 text-left mb-14 animate-fade-in-up opacity-0"
           style={{ animationDelay: '0.6s' }}
         >
           {bulletPoints.map((point, i) => (
             <div
               key={i}
-              className="flex items-start gap-3 p-3 rounded-xl bg-forest-800/40 backdrop-blur-sm border border-sage-600/20"
+              className="flex items-start gap-3 p-3.5 rounded-2xl bg-forest-900/50 backdrop-blur-sm border border-sage-700/30 hover:border-terra-400/40 transition-colors"
             >
-              <Leaf className="w-5 h-5 text-terra-400 flex-shrink-0 mt-0.5" />
-              <span className="text-sm text-sage-100 leading-relaxed">{point}</span>
+              <ShieldCheck className="w-5 h-5 text-terra-400 flex-shrink-0 mt-0.5" />
+              <span className="text-xs sm:text-sm text-sage-100 leading-relaxed">{point}</span>
             </div>
           ))}
         </div>
@@ -98,22 +96,22 @@ export default function HeroSection() {
         >
           <a
             href="#contato"
-            className="inline-flex items-center px-8 py-4 bg-terra-500 text-ivory-50 text-lg font-medium rounded-full hover:bg-terra-600 transition-all duration-300 shadow-xl shadow-terra-600/30 hover:shadow-terra-600/50 hover:-translate-y-1"
+            className="inline-flex items-center justify-center px-8 py-4 bg-terra-500 text-ivory-50 text-base md:text-lg font-semibold rounded-full hover:bg-terra-600 transition-all duration-300 shadow-xl shadow-terra-600/30 hover:shadow-terra-600/50 hover:-translate-y-1 w-full sm:w-auto"
           >
-            Agendar Minha Avaliação Somática
+            Agendar Minha Avaliação
           </a>
           <a
-            href="#filosofia"
-            className="inline-flex items-center gap-2 px-6 py-4 text-sage-200 hover:text-terra-400 transition-colors duration-300 font-medium"
+            href="#pilares"
+            className="inline-flex items-center justify-center gap-2 px-6 py-4 text-sage-200 hover:text-terra-400 transition-colors duration-300 font-medium w-full sm:w-auto text-sm md:text-base"
           >
-            Conheça Nossa Filosofia
+            Conhecer os 8 Pilares
             <ArrowDown className="w-4 h-4 animate-bounce" />
           </a>
         </div>
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-ivory-50 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-ivory-50 to-transparent pointer-events-none" />
     </section>
   )
 }
