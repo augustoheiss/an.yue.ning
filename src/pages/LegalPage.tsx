@@ -37,7 +37,7 @@ export default function LegalPage() {
       {/* Content */}
       <main className="max-w-4xl mx-auto px-6 lg:px-8 py-12 md:py-16">
         <p className="text-sm text-sage-500 mb-10 border-b border-sage-200 pb-6">
-          Última atualização: 13 de abril de 2026
+          Última atualização: 20 de outubro de 2026 — Padrão de Conformidade v3.0
         </p>
 
         <div className="prose-legal space-y-10 text-slate-700 leading-relaxed">
@@ -56,24 +56,63 @@ export default function LegalPage() {
             Este site tem como objetivo apresentar e facilitar o contato para os serviços de{' '}
             <strong>Terapia Somática Clínica, Massoterapia, Quiropraxia, Medicina Chinesa, Ayurveda,
             Drenagem Linfática, TRG (Terapia de Reprocessamento Generativo) e Bio-integração (Método Soutus)</strong>,
-            oferecidos por <strong>An.Yue.Ning (Rebeca)</strong>.
+            oferecidos de forma autônoma por <strong>An.Yue.Ning (Rebeca)</strong>.
           </p>
 
           <h3 className="font-semibold text-lg text-slate-800">1.2. Contato e Agendamentos</h3>
           <p>
             Os contatos, orçamentos e agendamentos realizados através dos botões de redirecionamento
-            deste site (como WhatsApp e E-mail) são de inteira responsabilidade do usuário e do
-            profissional prestador do serviço. O site funciona apenas como um canal de vitrine e
-            facilitação de comunicação.
+            deste site (como WhatsApp e E-mail) são de inteira responsabilidade do usuário e da
+            profissional prestadora do serviço. O site funciona exclusivamente como um canal de vitrine
+            institucional e facilitação de comunicação.
           </p>
 
-          <h3 className="font-semibold text-lg text-slate-800">1.3. Isenção de Responsabilidade Técnica</h3>
+          <h3 className="font-semibold text-lg text-slate-800">
+            1.3. Disclaimer de Saúde e Não-Substituição Médica
+          </h3>
           <p>
-            A infraestrutura web, design e código-fonte deste site foram desenvolvidos de forma
-            terceirizada. O desenvolvedor responsável pela criação da página não possui vínculos
-            societários, não atua no atendimento aos clientes e não se responsabiliza pela prestação
-            dos serviços ofertados, promessas comerciais, ou pela gestão e armazenamento dos dados
-            trocados diretamente com o profissional após o redirecionamento.
+            O conteúdo disponibilizado neste portal (incluindo textos, áudios, podcasts, estudos do
+            Método Soutus e descrições terapêuticas) possui finalidade estritamente informativa,
+            integrativa, complementar e educativa de bem-estar.{' '}
+            <strong>
+              Nenhuma informação ou prática integrativa apresentada neste site substitui diagnósticos,
+              exames, prescrições farmacológicas ou acompanhamentos médicos, psiquiátricos ou
+              psicológicos clínicos convencionais.
+            </strong>{' '}
+            Em caso de sintomas agudos ou emergências médicas/psiquiátricas, procure imediatamente
+            assistência hospitalar especializada.
+          </p>
+
+          <h3 className="font-semibold text-lg text-slate-800">
+            1.4. Isenção de Responsabilidade Técnica, Repositório Público e Cláusula de Indenização (Hold Harmless)
+          </h3>
+          <p>
+            A arquitetura de software, interface visual e código-fonte desta plataforma foram
+            desenvolvidos de forma independente sob o modelo <em>AS-IS</em> (&quot;no estado em que se
+            encontra&quot;). Por razões de transparência tecnológica, auditoria de segurança da
+            informação e portfólio de engenharia de software, o código-fonte de apresentação
+            (front-end) pode estar hospedado em repositório público (GitHub), contendo exclusivamente
+            marcação estrutural e metadados públicos de divulgação comercial expressamente autorizados
+            pela Controladora. O engenheiro de software responsável pelo desenvolvimento não possui
+            vínculo societário, empregatício ou de subordinação com a Controladora, não atua na
+            triagem clínica ou atendimento de clientes, não possui acesso ou ingerência sobre mensagens
+            trocadas após o redirecionamento externo e não detém responsabilidade solidária ou
+            subsidiária (nos termos do Art. 42 da LGPD) por condutas terapêuticas, decisões de estilo
+            de vida adotadas pelos usuários ou pelo tratamento de dados realizado de forma autônoma
+            pela profissional em seus dispositivos privados.
+          </p>
+
+          <h3 className="font-semibold text-lg text-slate-800">
+            1.5. Propriedade Intelectual e Reserva de Direitos em Repositório Público
+          </h3>
+          <p>
+            A disponibilização pública do código-fonte para fins de transparência técnica e portfólio{' '}
+            <strong>não concede licença de uso</strong> sobre a identidade visual, marca{' '}
+            <strong>An.Yue.Ning</strong>, tese autoral do <strong>Método Soutus</strong>, fotografias
+            pessoais, áudios ou textos autorais desta página, os quais permanecem protegidos pela Lei
+            de Direitos Autorais (Lei nº 9.610/1998) e pela Lei da Propriedade Industrial (Lei nº
+            9.279/1996). É vedada a clonagem comercial, reprodução indevida ou uso de imagem sem
+            autorização expressa.
           </p>
 
           {/* === 2. POLÍTICA DE PRIVACIDADE === */}
@@ -81,62 +120,123 @@ export default function LegalPage() {
             2. Política de Privacidade (LGPD)
           </h2>
           <p>
-            Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), detalhamos
-            como tratamos as suas informações:
+            Em conformidade com a Lei Geral de Proteção de Dados (Lei Federal nº 13.709/2018),
+            detalhamos de forma transparente como as informações são tratadas:
           </p>
 
-          <h3 className="font-semibold text-lg text-slate-800">2.1. Coleta de Dados</h3>
+          <h3 className="font-semibold text-lg text-slate-800">
+            2.1. Coleta Mínima e Processamento 100% Local (Client-Side)
+          </h3>
           <p>
-            Nós coletamos apenas as informações estritamente necessárias para a prestação do serviço
-            ou atendimento. Quando você clica em nossos botões de contato (WhatsApp ou E-mail), os
-            dados fornecidos voluntariamente por você (como seu nome, número de telefone e conteúdo
-            da mensagem) são recebidos diretamente por <strong>An.Yue.Ning (Rebeca)</strong>. Este
-            site não possui bancos de dados ocultos que capturam suas informações sem o seu
-            consentimento.
+            Adotamos o princípio da minimização de dados (Art. 6º, III da LGPD). Toda a navegação e
+            interação nesta página ocorrem exclusivamente na memória temporária do navegador do
+            próprio usuário (<em>Client-Side</em>). Este site não possui banco de dados oculto e não
+            armazena informações pessoais ou sensíveis em servidores intermediários. Ao acionar os
+            botões de contato (WhatsApp), os dados fornecidos voluntariamente por você são transmitidos
+            diretamente à Controladora <strong>An.Yue.Ning (Rebeca)</strong> sob a criptografia da
+            própria plataforma de mensagens.
           </p>
 
-          <h3 className="font-semibold text-lg text-slate-800">2.2. Uso dos Dados</h3>
-          <p>Os dados fornecidos por você serão utilizados única e exclusivamente para:</p>
+          <h3 className="font-semibold text-lg text-slate-800">
+            2.2. Finalidade e Bases Legais do Tratamento (Art. 7º e Art. 11 da LGPD)
+          </h3>
+          <p>
+            O tratamento dos dados encaminhados voluntariamente pelo titular fundamenta-se nas
+            seguintes hipóteses legais da LGPD:
+          </p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Retornar o seu contato e responder a dúvidas;</li>
-            <li>Enviar orçamentos e realizar agendamentos;</li>
-            <li>Prestar o serviço contratado;</li>
-            <li>Enviar atualizações estritamente relacionadas ao serviço solicitado.</li>
+            <li>
+              <strong>Procedimentos Preliminares e Execução de Contrato (Art. 7º, V):</strong>{' '}
+              Responder a dúvidas, realizar triagem inicial de agendamento e prestar as sessões
+              terapêuticas solicitadas;
+            </li>
+            <li>
+              <strong>Consentimento Específico do Titular (Art. 7º, I e Art. 11, I):</strong> Para
+              qualquer informação de bem-estar ou saúde compartilhada voluntariamente pelo paciente
+              durante o contato direto com a profissional;
+            </li>
+            <li>
+              <strong>Cumprimento de Obrigação Legal ou Regulatória (Art. 7º, II):</strong> Emissão de
+              comprovantes e guarda de registros exigidos pela legislação aplicável.
+            </li>
           </ul>
 
-          <h3 className="font-semibold text-lg text-slate-800">2.3. Compartilhamento de Informações</h3>
+          <h3 className="font-semibold text-lg text-slate-800">
+            2.3. Compartilhamento de Informações e Sigilo Terapêutico
+          </h3>
           <p>
-            Nós não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins
-            de marketing ou qualquer outra finalidade que não seja o cumprimento do serviço
-            solicitado, exceto se exigido por lei ou determinação judicial.
+            Respeitamos o sigilo absoluto das informações de bem-estar compartilhadas pelos clientes.
+            Não vendemos, alugamos ou comercializamos dados pessoais com terceiros para fins
+            publicitários ou de marketing, exceto mediante obrigação legal ou determinação judicial.
           </p>
 
-          <h3 className="font-semibold text-lg text-slate-800">2.4. Cookies e Tecnologias de Rastreamento</h3>
+          <h3 className="font-semibold text-lg text-slate-800">
+            2.4. Cookies, Armazenamento Técnico e Zero-Tracking
+          </h3>
           <p>
-            Este site pode utilizar cookies básicos e ferramentas de análise (como o Google Analytics)
-            apenas para entender o volume de acessos e melhorar a sua experiência de navegação.
-            Nenhuma informação pessoal identificável é extraída através desses cookies funcionais.
+            Esta aplicação prioriza a privacidade por padrão (<em>Privacy by Design</em>) e não utiliza
+            cookies de rastreamento publicitário invasivo ou venda de perfil comportamental. Recursos
+            técnicos do navegador e reprodutores de mídia integrados (como embeds oficiais do Spotify)
+            operam sob suas respectivas políticas de segurança estritamente para viabilizar a
+            reprodução de áudio solicitada pelo usuário.
           </p>
 
-          <h3 className="font-semibold text-lg text-slate-800">2.5. Seus Direitos</h3>
-          <p>Você tem o direito de solicitar a qualquer momento:</p>
+          <h3 className="font-semibold text-lg text-slate-800">
+            2.5. Direitos do Titular dos Dados (Art. 18 da LGPD)
+          </h3>
+          <p>
+            Nos termos do Art. 18 da LGPD, você tem o direito de solicitar à Controladora, a qualquer
+            momento e mediante requisição gratuita:
+          </p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>A confirmação da existência de tratamento dos seus dados;</li>
+            <li>A confirmação da existência de tratamento e o acesso aos seus dados;</li>
             <li>A correção de dados incompletos, inexatos ou desatualizados;</li>
-            <li>A exclusão dos seus dados dos nossos contatos comerciais.</li>
+            <li>
+              A anonimização, bloqueio, portabilidade ou eliminação de dados desnecessários dos
+              contatos comerciais;
+            </li>
+            <li>
+              A revogação do consentimento (Art. 18, IX), com atendimento das solicitações no prazo
+              legal de até 15 (quinze) dias (Art. 19, II da LGPD).
+            </li>
           </ul>
 
-          <h3 className="font-semibold text-lg text-slate-800">2.6. Contato do Controlador de Dados</h3>
+          <h3 className="font-semibold text-lg text-slate-800">
+            2.6. Proteção dos Dados Públicos da Profissional — Vedação de Scraping e Spam (Art. 7º, §§ 3º e 4º da LGPD)
+          </h3>
           <p>
-            Para exercer seus direitos ou tirar dúvidas sobre esta política, entre em contato
-            diretamente com o responsável pelo tratamento dos dados:
+            Os dados de contato comercial, telefone/WhatsApp, nome e imagem disponibilizados
+            publicamente nesta página e no código-fonte público têm como{' '}
+            <strong>
+              única e estrita finalidade permitir o contato por potenciais clientes interessados nos
+              serviços terapêuticos descritos
+            </strong>
+            , observando a boa-fé e a finalidade original de sua disponibilização (Art. 7º, §§ 3º e
+            4º da LGPD). É expressamente <strong>proibida a coleta automatizada</strong> (<em>web
+            scraping</em>, <em>crawling</em>, mineração por bots), a inclusão em listas de distribuição
+            comercial não solicitada (<em>spam</em>, telemarketing, disparos em massa via WhatsApp), a
+            comercialização por <em>data brokers</em> ou o uso para treinamento de modelos de
+            inteligência artificial sem autorização prévia e expressa da titular.
+          </p>
+
+          <h3 className="font-semibold text-lg text-slate-800">
+            2.7. Contato da Controladora e Alerta Antifraude
+          </h3>
+          <p>
+            Para exercer seus direitos previstos na LGPD ou esclarecer dúvidas sobre esta política,
+            entre em contato exclusivamente pelo canal oficial abaixo:
           </p>
           <div className="bg-sage-50 border border-sage-200 rounded-xl p-6 space-y-2">
-            <p><strong className="text-slate-800">Responsável:</strong> An.Yue.Ning (Rebeca)</p>
-            <p><strong className="text-slate-800">WhatsApp:</strong>{' '}
+            <p><strong className="text-slate-800">Responsável / Controladora:</strong> An.Yue.Ning (Rebeca)</p>
+            <p><strong className="text-slate-800">WhatsApp Oficial:</strong>{' '}
               <a href="https://wa.me/5511969187866" className="text-terra-500 hover:text-terra-600 underline underline-offset-2" target="_blank" rel="noopener noreferrer">
                 +55 (11) 96918-7866
               </a>
+            </p>
+            <p className="text-xs text-slate-600 pt-2 border-t border-sage-200">
+              <strong>Alerta de Segurança:</strong> A profissional atende exclusivamente pelo número
+              oficial listado acima, jamais solicita códigos de verificação via SMS/WhatsApp e não
+              autoriza cobranças ou transferências Pix em nome de terceiros desconhecidos.
             </p>
           </div>
         </div>
